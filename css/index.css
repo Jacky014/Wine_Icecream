@@ -31,11 +31,15 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Tapestry', cursive;
 }
 html{
     font-size: 62.5%;
+    margin: 0;
+}
+body {
+    width: 100%;
+    margin: auto;
 }
 
 header{
@@ -47,7 +51,6 @@ header{
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    padding: 1rem 10%;
     align-items: center;
     height: 400px;
     width: 100%;
@@ -56,38 +59,47 @@ header{
     align-content: center;
     /*position:absolute;*/
 }
-
-header, h1, a {
-    display: inline-block;
-    margin-top: 0;
-    text-align: center;
-
-}
 nav, ul, li, a {
     display: inline-block;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-content:flex-end;
+    width:fit-content;
     text-decoration: none;
     list-style-type: none;
     display: flex;
+    align-items: flex-end;
     flex-basis: 60%;
+    font-size: large;
+    margin: auto;
+    justify-content:space-between;
+}
+nav, ul, li{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction:row;
+    justify-content:end;
 }
 h1{
     text-align: center;
     color: rgb(70, 44, 39);
     text-shadow: 5px 5px 8px turquoise;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline;
 }
 h2{
+    margin: 5%;
     text-decoration: underline;
+    text-align: center;
+    font-size: x-large;
 }
 body {
     background-color: grey;
     background-image: url(../Images/top-view-delicious-organic-wine-and-grapes.jpg);
     background-blend-mode: lighten;
     position:relative;
-    margin: 5px;
-    padding: 5px;
+}
+footer{
+    margin-top: 2%;
 }
 .right__image {
     width: 400px;
@@ -112,24 +124,26 @@ body {
     height:fit-content;
     line-height: 30px;
     padding: 2px;
-    margin: 20px 500px 20px 2px;
     box-shadow: 1px 2px 10px 5px black;
     display:block;
     background-size:contain;
     background-position: center;
     border: 4px;
     border-radius: 2%;
-    box-sizing: 300px;
-    max-width: 1300px;
-    margin: 0 auto;
+    max-width: 95%;
+    margin: 10% auto;
 }
-.index__logo{
+a .logo{
     margin: auto;
-    padding: 200px 80px 200px;
-    margin-left: 40px;
-    margin-right: auto;
-    flex-basis: 40%;
-    max-width: 120px;
+    margin-bottom: 10%;
+    display: flex;
+}
+img{
+    display:inline;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content:flex-start;
 }
 .video{
     margin-bottom: 1000px;
@@ -155,9 +169,6 @@ footer, table, td, a {
     border: 10px outset #35854a;
     width: 100px;
 }
-
-
-/*Testimonio*/
 /*Gallery*/
 .gallery__container {
     width: 100%;
@@ -169,86 +180,80 @@ footer, table, td, a {
     grid-template-rows: repeat(2, 1fr);
     padding: 20px;
     border-radius: 4px;
+    transition: all 500ms;
 }
 .gallery__img1{
     grid-column: 1/3;
     height: 100%;
     width: 100%;
+    transition: all 500ms;
 }
  .gallery__img3 {
     grid-column: 1/ 2;
     grid-row: 2 / 3 ;
     height: 70%;
     width: 100%;
+    transition: all 500ms;
 }
 .gallery__img4 {
     grid-column: 2/ 3;
     grid-row: 2 / 3;
     height: 70%;
     width: 100%;
+    transition: all 500ms;
 }
 .gallery__img5 {
     grid-column: 3 / 5; 
     grid-row:  1 /4 ;
     height: 84.5%;
     width: 100%;
+    transition: all 500ms;
+    position: relative;
 }
-
-
+h2:hover{
+    transform:scale(2.15);
+}
+.gallery__img1:hover {
+    transform:scale(1.15);
+}
+.gallery__img3:hover {
+    transform:scale(1.15);
+}
+.gallery__img4:hover {
+    transform:scale(1.15);
+}
+.gallery__img5:hover {
+    transform:scale(1.15);
+}
     /*Cards de testimonio*/
-.cards {
+img.box__img{
     display: flex;
-    flex-direction: row;
-    gap: 6rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.box{
-    display: flex;
+    margin: auto;
     flex-direction: column;
-    flex: 1 1 30%;
+    justify-content: center;
     gap: 1rem;
-    flex: 1 1 clamp (300px, 30%, 400px);
+    transition: all 500ms;
+    align-items: center;
+    border-width: 2px;
+    width:80%;
+    border-radius: 10px;
+    border-color: green;
+    border-style: solid;
 }
+
 .box__title{
     color: var(--text-color);
     font-size: var(--text-large);
+    transition: all 500ms;
+    font-size: xx-large;
 }
-
-@media screen and (max-width:480px) {
-    header{
-    flex-direction:column;
-    gap: 2rem;
-    }
-    .gallery{
-        grid-template-rows: repeat(4, auto);
-        gap: 1rem;
+.box__title:hover{
+    transform: skew(5deg, 5deg);
+}
+@media screen and (min-width: "1000px"){
+    header{flex-direction: column;    
     }
 }
-
-@media screen and (min-width: "320px"){
-    header{flex-direction: column;
-    gap:2rem;
-    grid-template-columns: repeat(2, 1fr);
-}
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  @media {screen} and (max-width:600px){
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0;
-    }
     .row .column {
         display: flexbox;
         flex-direction: column;
@@ -263,22 +268,96 @@ footer, table, td, a {
         vertical-align: middle;
     }
         /*Cards*/
-    .cards {
+   .cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 6rem;
         justify-content: center;
         flex-wrap: wrap;
+        margin:5% auto;
+        align-items: center;
+        height: 50%;
     }
-    .box{
-        display: table-column;
-        flex-direction: column;
-        flex: 1 1 30%;
-        gap: 1rem;
-        flex: 1 1 clamp (300px, 30%, 400px);
-    }
+
     .box__title{
         color: var(--text-color);
         font-size: var(--text-large);
     }
-}  
+
+/*Media queries*/
+@media all and (max-width: 700px){
+    .cards{
+        flex-direction: column;
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width:500px){
+    article.box{
+    grid-template-rows: repeat(5, 1fr);
+    display: flex;
+    align-items: center;
+    }
+}
+@media screen and (max-width:700px) {
+    header, nav, ul, li{
+        margin-top: 1%;
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: small;
+        }
+    }
+@media screen and (max-width:360px) {
+    header, nav, ul, li{
+        margin-top: 1%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        font-size: x-small;
+        } }
+@media screen and (max-width:360px) {
+    header, a, img{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    } } 
+@media screen and (max-width:700px){
+    main{
+        margin-top: 20%;
+
+    }
+}
+@media screen and (max-width:360px){
+    body, html{
+        margin:auto;
+        width: 100%;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+}}
+@media screen and (max-width:800px){
+    .gallery__container{
+        display: inline-block;
+        margin: auto;
+ }}
+@media screen and (max-width:800px){
+   h1{
+        display: inline;
+        margin: auto;
+}}
+@media screen and (max-width:600px){
+    img.right__image{
+        display: inline-block;
+        margin: auto;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+ }}
+
+ @media screen and (max-width:500px){
+    .index.index__info{
+        margin: 10%;
+ }}
