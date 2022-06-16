@@ -59,6 +59,10 @@ header{
     align-content: center;
     /*position:absolute;*/
 }
+nav, ul, li{
+    margin: 0.5%;
+    padding: 0.5%;
+}
 nav, ul, li, a {
     display: inline-block;
     flex-direction: column;
@@ -73,13 +77,17 @@ nav, ul, li, a {
     margin: auto;
     justify-content:space-between;
 }
+nav{
+    margin: 0;
+}
 nav, ul, li{
     display: flex;
     justify-content: flex-end;
     flex-direction:row;
-    justify-content:end;
+    justify-content:space-between;
 }
 h1{
+    height: 5%;
     text-align: center;
     color: rgb(70, 44, 39);
     text-shadow: 5px 5px 8px turquoise;
@@ -289,6 +297,7 @@ img.box__img{
     .cards{
         flex-direction: column;
         margin-top: 20%;
+        width: 75%;
     }
 }
 @media screen and (max-width:500px){
@@ -303,13 +312,14 @@ img.box__img{
         margin-top: 1%;
         display: flex;
         flex-direction:column;
-        justify-content: flex-end;
-        align-items: flex-end;
+        justify-content:center;
+        align-items:center;
         font-size: small;
         }
     }
-@media screen and (max-width:360px) {
+@media screen and (max-width:700px) {
     header, nav, ul, li{
+        height: 5%;
         margin-top: 1%;
         display: flex;
         flex-direction:column;
@@ -337,17 +347,21 @@ img.box__img{
         max-width: 100% !important;
         overflow-x: hidden !important;
 }}
-@media screen and (max-width:800px){
+@media screen and (max-width:700px){
     .gallery__container{
-        display: inline-block;
+        display: block;
         margin: auto;
+        width: 95%;
+        align-content: center;
+        justify-content: center;
+
  }}
 @media screen and (max-width:800px){
    h1{
         display: inline;
         margin: auto;
 }}
-@media screen and (max-width:600px){
+@media screen and (max-width:450px){
     img.right__image{
         display: inline-block;
         margin: auto;
@@ -360,4 +374,8 @@ img.box__img{
  @media screen and (max-width:500px){
     .index.index__info{
         margin: 10%;
+ }}
+ @media screen and (max-width:500px){
+    .logo__img{
+        flex-direction: row;
  }}
