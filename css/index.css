@@ -93,6 +93,7 @@ h1{
     text-shadow: 5px 5px 8px turquoise;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: inline;
+    margin-top: 5%;
 }
 h2{
     margin: 5%;
@@ -159,7 +160,6 @@ img{
 }
 footer, table, td, a {
     text-align: center;
-    block-size: 100px;;
     font-weight: bold;
     margin: 0 auto;
     padding: 0 auto;
@@ -291,6 +291,41 @@ img.box__img{
         color: var(--text-color);
         font-size: var(--text-large);
     }
+/*Ingresar Nuevo Usuario*/
+.imagen__central{
+    display: block;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+}
+.form{
+    font-size: large;
+    font-weight: bold;
+    width: 100%;
+}
+/*Helados de Temporada*/
+table {
+    width: 80%;
+    font-size: large;
+}
+table, tr, td{
+    justify-content: space-between;
+    align-items: center;
+}
+/*Historia*/
+.logo___historia{
+    margin: 5%;
+}
+/*Contactanos*/
+.form__contact{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Media queries*/
 @media all and (max-width: 700px){
@@ -379,3 +414,42 @@ img.box__img{
     .logo__img{
         flex-direction: row;
  }}
+ /*media query Ingresar Nuevo Usuario*/
+ @media screen and (max-width:500px){
+   .imagen__central{
+    display: inline;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto;
+ }}
+
+ @media screen and (max-width:500px){
+    form{
+        font-size: large;
+        font-weight: bold;
+        width: 100%;
+    
+    }}
+/*Historia*/
+@media screen and (min-width:320px){
+    img .logo___historia{
+        margin: 15%;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+}
+/*Contactanos*/
+@media screen and (min-width:500px){
+    .form__contact{
+        align-content: center;
+        justify-content: center;
+        flex-direction:row;
+        display: inline;
+        margin: auto;
+        font-size: large;
+    }
+    
+}
