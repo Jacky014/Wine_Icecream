@@ -45,23 +45,34 @@
     </center>
         <br>
         <br>
-        <form class="form__contact"action="" method="get">
-            <label for="name" placeholder="Ingrese su Nombre">Nombre</label>
-            <input type="text" required="" id="name" name="nombre" placeholder="Ingrese su nombre">
-            <br><br>
-            <label for="name" placeholder="Ingrese su Apellido">Apellido</label>
-            <input type="text" required="" id="name" name="apellido" placeholder="Ingrese su apellido">
-            <br><br>
-            <label for="comentarios">Comentarios</label>
-            <br>
-            <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Ingrese sus comentarios"></textarea>
-            <br>
-            <br>
-            <input type="submit" value="Enviar">
-            <br>
-            <br>
-            <input type="reset" value="Borrar Formulario">
+       <div class="container">
+        <!--Agregando Bootstrap a mis formulario de contacto -->
+        <form class="row g-3 mt-3">
+            <div class="col-12">
+                <label for="nameInput" class="form-label">Nombre</label>
+                <input type="name" class="form-control" id="nameInput" placeholder="Ingrese su Nombre">
+            </div>
+            <div class="col-12">
+                <label for="lastnameInput" class="form-label">Apellido</label>
+                <input type="last name" class="form-control" id="lastnameInput" placeholder="Ingrese su Apellido">
+            </div>
+            <div class="col-12">
+                <label for="comments" class="comments-label">Comentarios</label>
+                <input type="comments" class="form-control" id="commentsInput" placeholder="Introduzca sus comentarios">
+            </div>
+            <div class="col-12">
+                <button type="submitt" class="btn b tn-primary">
+                    Enviar Commentarios
+            </div>
+            <div class="col-12">
+                <button type="reset" class="btn b tn-secondary">
+                    Borrar Commentarios
+            </div>
         </form>
+
+
+
+       </div>
     </center>
     <br>
     <hr>

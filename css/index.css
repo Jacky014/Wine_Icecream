@@ -59,6 +59,9 @@ header{
     align-content: center;
     /*position:absolute;*/
 }
+nav .navbar navbar-light style{
+    color: white;
+}
 nav, ul, li{
     margin: 0.5%;
     padding: 0.5%;
