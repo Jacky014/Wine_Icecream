@@ -20,5 +20,8 @@
   },
   "homepage": "https://github.com/Jacky014/Wine_Icecream#readme",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }
