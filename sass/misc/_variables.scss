@@ -6,20 +6,18 @@ $text-color: #1E3F20;
 $base:#EDCD1D;
 
      /*Spacings*/
-$spacings:(
-    $spacing-large: 6rem,
-    $spacing-medium: 2.4rem,
-    $spacing-small: 2rem,
-    $spacing-xsmal: 1rem,
-);
+$spacing-large: 6rem ;
+$spacing-medium: 2.4rem ;
+$spacing-small: 2rem ;
+$spacing-xsmal: 1rem ;
+
+    
 
 @each $key, $val in $spacings{ 
     .#{$key}{
         padding: #{$val};
     }
 }
-    
-
     /*Font-Family*/
 $font-principal: 'Tapestry';
 $dont-title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans' 'Arial', 'sans-serif';

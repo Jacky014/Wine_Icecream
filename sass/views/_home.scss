@@ -54,14 +54,18 @@ img{
     padding: 10px 12px;
     font-size: 18px;
     margin: 0 auto;
+    border: none;
+    margin: 5px 0;
 }
 .btn--aceptar {
+    @extend.btn;
     background-color: pink;
     &:hover{
         background-color: blueviolet;
     }
 }
 .btn--cancelar {
+    @extend.btn;
     background-color: lightcoral;
     &:hover{
         background-color: coral;
