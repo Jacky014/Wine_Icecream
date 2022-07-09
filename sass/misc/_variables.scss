@@ -6,10 +6,19 @@ $text-color: #1E3F20;
 $base:#EDCD1D;
 
      /*Spacings*/
-$spacing-large: 6rem;
-$spacing-medium: 2.4rem;
-$spacing-small: 2rem;
-$spacing-xsmal: 1rem;    
+$spacings:(
+    $spacing-large: 6rem,
+    $spacing-medium: 2.4rem,
+    $spacing-small: 2rem,
+    $spacing-xsmal: 1rem,
+);
+
+@each $key, $val in $spacings{ 
+    .#{$key}{
+        padding: #{$val};
+    }
+}
+    
 
     /*Font-Family*/
 $font-principal: 'Tapestry';

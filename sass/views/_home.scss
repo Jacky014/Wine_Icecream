@@ -14,6 +14,7 @@
 }
 .index__info{
     color:rgb(47, 49, 48);
+    gap: map-get($spacings, $spacing-large);
     font-size: large;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:900;
@@ -47,4 +48,22 @@ img{
 .video{
     margin-bottom: 1000px;
     padding-right: 1000px;
+}
+.btn{
+    width: 150px;
+    padding: 10px 12px;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.btn--aceptar {
+    background-color: pink;
+    &:hover{
+        background-color: blueviolet;
+    }
+}
+.btn--cancelar {
+    background-color: lightcoral;
+    &:hover{
+        background-color: coral;
+    }
 }

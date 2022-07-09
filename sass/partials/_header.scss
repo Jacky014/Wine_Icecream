@@ -13,8 +13,9 @@ header{
     margin: auto;
     padding: auto;
     align-content: center;
+    padding: $spacing-small;
+}
     /*position:absolute;*/
-
     nav { 
     navbar-light style{
     color: white;
@@ -44,8 +45,6 @@ header{
         justify-content: flex-end;
         flex-direction:row;
         justify-content:space-between;
-    }
-
     }
     }
 

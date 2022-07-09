@@ -1,10 +1,22 @@
 /*MISC*/
 /*Colors*/
 /*Spacings*/
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:ital,wght@0,400;0,900;1,300;1,400&family=Oleo+Script+Swash+Caps&family=Tapestry&display=swap");
+spacing-large {
+  padding: 6rem; }
+
+spacing-medium {
+  padding: 2.4rem; }
+
+spacing-small {
+  padding: 2rem; }
+
+spacing-xsmal {
+  padding: 1rem; }
+
 /*Font-Family*/
 /*Font-Sizes*/
 /*Normalize*/
-@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:ital,wght@0,400;0,900;1,300;1,400&family=Oleo+Script+Swash+Caps&family=Tapestry&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -171,15 +183,20 @@ header {
   width: 100%;
   margin: auto;
   padding: auto;
-  align-content: center;
-  /*position:absolute;*/ }
-  header nav navbar-light style {
+  align-content: center; }
+  header padding
+nav navbar-light style {
     color: white;
     margin: 0; }
-  header nav ul, header nav li {
+  header padding
+nav ul, header padding
+nav li {
     margin: 0.5%;
     padding: 0.5%; }
-  header nav ul, header nav li, header nav a {
+  header padding
+nav ul, header padding
+nav li, header padding
+nav a {
     display: inline-block;
     flex-direction: column;
     align-content: flex-end;
@@ -192,7 +209,9 @@ header {
     font-size: large;
     margin: auto;
     justify-content: space-between; }
-  header nav ul, header nav li {
+  header padding
+nav ul, header padding
+nav li {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
