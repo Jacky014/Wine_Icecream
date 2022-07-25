@@ -1,4 +1,34 @@
 /*Historia*/
-.logo___historia{
+.right__image{
     margin: 5%;
+    padding:20%, 50%;
+    width: 25%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: brown;
+    float: right;
+    border: 5px;
+    background-color: #07550c;
+    box-sizing: border-box;
+    width: 25%
 }
+
+.index__info {
+    color: #2f3130;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    text-align: left;
+    background-color: #e8e8e8;
+    text-align: justify;
+    height: fit-content;
+    line-height: 30px;
+    padding: 2px;
+    box-shadow: 1px 2px 10px 5px black;
+    display: block;
+    background-size: contain;
+    background-position: center;
+    border: 1px;
+    border-radius: 2%;
+    max-width: 95%;
+    margin: 10% auto; }
