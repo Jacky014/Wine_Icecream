@@ -1,7 +1,5 @@
-
-
 /*Media queries*/
-@media all and (max-width: 700px){
+@media all and (max-width: 850px){
     .cards{
         flex-direction: column;
         margin-top: 20%;
@@ -15,7 +13,7 @@
     align-items: center;
     }
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:850px) {
     header, nav, ul, li{
         margin-top: 1%;
         display: flex;
@@ -25,7 +23,7 @@
         font-size: small;
         }
     }
-@media screen and (max-width:700px) {
+@media screen and (max-width:850px) {
     header, nav, ul, li{
         height: 5%;
         margin-top: 1%;
@@ -42,7 +40,7 @@
         flex-direction: column;
         margin: auto;
     } } 
-@media screen and (max-width:700px){
+@media screen and (max-width:850px){
     main{
         margin-top: 20%;
 
