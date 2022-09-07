@@ -7,6 +7,23 @@ if (edad <= 17){
 
 else{
     alert("Eres MAYOR de edad porque tienes " +edad+" años, estamos listos para tomar tu pedido")
-    
+}
+
+// objetos de helados 
+let helados ={
+    nombre : ['Berry Merlot', 'Cherry Rose', 'Peach Chardonnay'],
+    tamano: [8, 16 , 32],
+    costo: [5, 10, 20]
+
+}
+
+
+
+// objetos de helados de temporada
+
+let heladosDeTemporada ={
+    nombre : ['Berry Merlot', 'Cherry Rose', 'Peach Chardonnay'],
+    tamano: [8, 16 , 32],
+    costo: [5, 10, 20]
 
 }
